@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+     background-color: rgb(250, 239, 239);
+    
+
+}
+
+.toolBox-cont{
+    height: 4rem;
+    background-color: #5f6b68;
+    display:flex;
+    align-items: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.toolBox-cont > * {
+    margin-left: 4rem;
+}
+
+.toolBox-priority-cont{
+   height:3rem;
+   width:18%;
+   display: flex;
+   justify-content:space-evenly;
+   align-items: center;
+   border-radius: 3rem;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+.action-btn-cont
+{
+    height:3rem;
+    width:10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.action-btn-cont > *{
+ width: 3rem;
+ height: 3rem;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ font-size: 1.5rem;
+ border-radius: 1.5rem;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ 
+}
+
+.color{
+    height:2rem;
+    width:2rem;
+    background-color: lightsalmon;
+    border-radius: 1rem;
+    transition: transform .2s;
+}
+
+.color:hover{
+    transform: scale(1.2);
+
+}
+
+.lightPink{
+    background-color: lightpink;
+}
+.lightGreen{
+    background-color: lightgreen;
+}
+.lightBlue{
+    background-color: lightblue;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.action-btn-cont > *:hover{
+     background-color: #434d4a;
+    
+}
+
+.no-ticket-sign-cont{
+    height:10rem;
+    width: 40rem;
+    background-color: rgb(246, 246, 188);
+    position:absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top:calc((100vh /2) - 5rem);
+    left:calc((100vw /2) - 20rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.no-ticket-sign-cont > *{
+    font-size: 60px;
+}
+
+.modal-cont{
+    height:16rem;
+    width:26rem;
+    background-color: lightblue;
+    position: absolute;
+    top:calc((100vh /2) - 8rem);
+    left:calc((100vw /2) - 13rem);
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2rem;
+   
+}
+
+.textarea-cont{
+    height:100%;
+    width:75%;
+    border:none;
+    outline:none;
+    background-color: rgb(245, 247, 247);
+    resize:none;
+    padding:2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+
+}
+
+.priority-color-cont{
+    background-color: rgb(153, 144, 238);
+    width:25%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: #5f6b68;
+
+}
+
+.priority-colors{
+    height:3rem;
+    width:3rem;
+    border-radius: 10px;
+    transition: transform .0.5s;
+}
+
+.priority-colors:hover{
+    transform: scale(1.1);
+
+}
+
+
+
+.border{
+    border: 4px solid whitesmoke;
+    border-radius: 1.5rem;
+    
+}
+
+.ticket-cont{
+    height:12rem;
+    width:15rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+
+    margin:2rem;
+    transition: transform .2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.ticket-cont:hover{
+transform: scale(1.2);
+}
+.ticket-color{
+    height:1rem;
+    
+
+}
+
+.ticket-id{
+    height:2rem;
+    padding:0.4rem;
+}
+.ticket-taskarea{
+    height:calc(100% - 1rem - 2rem - 2rem);
+    padding:0.4rem;
+    outline: none;
+}
+.main-cont{
+    display: flex;
+    flex-wrap: wrap;
+    margin:2rem;
+    justify-content: center;
+    
+}
+
+.ticket-lock{
+    height:2rem;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 0.5rem;
+    color: gray;
+}
+
+.remove-btn-incicator{
+    display: none;
+}
+ 
+@media screen and (min-width: 425px) and (max-width:768px) {
+   
+    .toolBox-priority-cont{
+        height:3rem;
+        width:18%;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        border-radius: 3rem;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+     
+     }
+     .color{
+        height:1rem;
+        width:1rem;
+        /* background-color: lightsalmon; */
+        border-radius: 1rem;
+        transition: transform .2s;
+    }
+}
